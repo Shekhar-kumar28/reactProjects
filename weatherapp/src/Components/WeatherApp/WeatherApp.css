@@ -81,7 +81,7 @@
 
 /* WeatherApp.css */
 
-.container {
+/* .container {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
@@ -143,6 +143,110 @@
   
   .text {
     font-size: 14px;
+  } */
+
+
+  /* WeatherApp.css */
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #257d80;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+  
+  .top-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cityInput {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #892b2b;
+    border-radius: 5px;
+  }
+  
+  .search-icon {
+    cursor: pointer;
+  }
+  
+  .weather-image {
+    margin: 20px 0;
+  }
+  
+  .weather-temp {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .weather-location {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .element {
+    margin-bottom: 10px;
+  }
+  
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .data {
+    text-align: center;
+  }
+  
+  .text {
+    font-size: 14px;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  @media (min-width: 576px) {
+    .container {
+      max-width: 600px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 800px;
+    }
+  
+    .top-bar {
+      flex-direction: row;
+    }
+  
+    .cityInput {
+      margin-bottom: 0;
+      width: 70%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 1000px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+    }
+  }
+  
   
   
