@@ -6,13 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "cd client &&  npm  run  dev",
-    "server":"cd server && npm start",
+    "server": "cd server && npm start",
     "dev": "concurrently \"npm run client\" \"npm run server\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "react-router-dom": "^6.21.3"
   }
 }
