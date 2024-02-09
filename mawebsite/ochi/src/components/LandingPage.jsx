@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaArrowUpLong } from "react-icons/fa6";
 
-
 const LandingPage = () => {
     return (
         <div className="w-full h-screen bg-zinc-900 pt-1">
@@ -9,12 +8,17 @@ const LandingPage = () => {
                 {["We Create", "Eye Opening", "Presentations"].map((item, index) => {
                     return (
                         <div className='masker' key={index}>
-                            <h1 className='uppercase text-6xl leading-6xl tracking-tighter font-['Founders_Grotesk_X-Condensed'] font-medium'>{item}</h1>
+                            <div className="w-fit flex items-end">
+                                {index === 1 && (
+                                    <div className="mr-[1vw] w-[8vw] rounded-md h-[5.7vw] relative top-[1.2vw] bg-green-500"></div>
+                                )}
+                                <h1 className='pt-[2vw] -mb-[1vw] uppercase text-[9vw] leading-[0.75] font-Founders_Grotesk_X-Condensed font-bold'>{item}</h1>
+                            </div>
                         </div>
                     );
                 })}
             </div>
-            <div className="border-t-[1px] border-zinc-800 mt-32 flex justify-between items-center py-5 px-20">
+            <div className="border-t-[1px] border-zinc-800 mt-20 flex justify-between items-center py-5 px-20">
                 {["For public and private companies", "From the first pitch to IPO"].map((item, index) => (
                     <p className="text-md font-light tracking-tight leading-none" key={index}>{item}</p>
                 ))}
@@ -29,4 +33,3 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
-
