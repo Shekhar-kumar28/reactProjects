@@ -52,9 +52,9 @@ const sessionOptions = {
 };
 
 
-app.get("/", (req, res) => {
-  res.send("Hi, I am Shekhar...")
-})
+// app.get("/", (req, res) => {
+//   res.send("Hi, I am Shekhar...")
+// })
 
 app.use(session(sessionOptions));
 app.use(flash());
